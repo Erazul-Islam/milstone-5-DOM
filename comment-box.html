@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add a new Comment</title>
+</head>
+
+<body>
+    <h1>Please add your comment</h1>
+    <div id="comment-conatainer">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto temporibus adipisci amet omnis, soluta
+            voluptates corrupti, iusto, quae sit ipsam quia animi esse delectus. Similique unde consequuntur deserunt
+            velit magni!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, ipsam fuga recusandae et molestias
+            voluptate facilis ab, repellendus optio dignissimos, cum accusantium dolores. Explicabo ea rerum tempora
+            minima, repellat laborum.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat nulla dignissimos et non ab maiores vero
+            consequatur illo pariatur qui, hic sit ipsum aperiam alias vel cumque ut doloremque velit!</p>
+    </div>
+    <div>
+        <textarea name="" id="" cols="60" rows="5"></textarea>
+        <br>
+        <button id="btn-post">POST</button>
+    </div>
+
+    <script>
+        // Add event listener to the post button
+        document.getElementById('btn-post').addEventListener('click',function(){
+            
+            // step 2 : get the comment inside the text area
+
+            const commentBox = document.getElementById('new-comment');
+            const newComment = commentBox.value;
+
+            // step 3 : set the comment inside the comment container 
+            //   substep 1 : get the comment container
+            //   subStep 2 : creat a  new element 
+                    //  3  : set the text of the element (p tag0)
+                    //  4 : add the p tag using appenChild
+
+            const commentContainer = document.getElementById('comment-container');
+            const p = document.createElement('p');
+            p.innerText = newComment;
+            commentContainer.appendChild(p)
+
+            // 4 : Clear the text area
+
+            commentBox.value = '';
+        })
+    </script>
+</body>
+
+</html>

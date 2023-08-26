@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a {
+            color: #881b1b;
+        }
+        #fruits{
+            color: aquamarine;
+        
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>This is RaB</h1>
+    <li class="a">One </li>
+    <li class="a">Two</li>
+    <li class="a">Three</li>
+    <li class="a">Four</li>
+
+    <section>
+        <p>
+            <li id="fruits">Banana</li>
+            <li id="fruits">JAck</li>
+            <li id="fruits">Mango</li>
+            <li id="fruits">Jam</li>
+            <li id="fruits">Guava</li>
+        </p>
+    </section>
+    <script src="dom.js"></script>
+    <script>
+        const someLi = document.querySelectorAll('#abc');
+        for (const li of someLi) {
+            console.log(li)
+        }
+    </script>
+</body>
+
+</html>

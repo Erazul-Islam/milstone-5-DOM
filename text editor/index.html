@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-center mt-7 text-4xl">My Text Editor</h1>
+    </header>
+    <main>
+         <div class="w-[1000px] mt-20 ml-[370px] h-[450px] bg-cyan-400">
+            <div class="pt-7 px-10">
+                <button onclick="updateText(this)" class="btn hover:bg-stone-950 btn-active  btn-neutral"><B>B</B></button>
+                <button class="btn hover:bg-stone-950 btn-active  btn-neutral"><i>I</i></button>
+                <button class="btn hover:bg-stone-950 btn-active  btn-neutral"><U>U</U></button>
+            </div>
+            <textarea id="input" class="textarea w-[800px] h-[270px] ml-[100px] mt-[50px]" placeholder="Bio"></textarea>
+         </div> 
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
